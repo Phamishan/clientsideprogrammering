@@ -26,16 +26,49 @@
                 </li>
             </ul>
         </nav>
-        <div class="d-flex justify-content-center">
-            <!-- position-absolute = position: absolute, bottom-0 = bottom: 0 -->
-            <div class="position-absolute bottom-0">
-                <img src="pics/logo.png" alt="LOGO" class="w-100 w-sm-200 h-100;">
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="d-flex justify-content-center" style="margin-top:10%">
+                            <input type="number" maxlength="4" class="form-control w-100 text-center" id="postNrIn"
+                                name="postNrInput" placeholder="Post Nr." min="1050" max="9990"></input>
+                            <button class="btn btn-primary" id="searchButton" type="button" style="margin-left:1%" onclick="httpGet()">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="d-flex justify-content-center">
+                            <label class="form-control w-300" readonly="readonly" id="postNrOut"
+                                style="margin-top:2%"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="d-flex justify-content-center">
+                            <label class="form-control w-300 h-100" id="kommunerOut"
+                                style="margin-top:2%"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <!-- position-absolute = position: absolute, bottom-0 = bottom: 0 -->
+                <div class="position-absolute bottom-0">
+                    <img src="pics/logo.png" alt="LOGO" class="w-100 w-sm-200 h-100;">
+                </div>
             </div>
         </div>
     </div>
 
+
     <!-- Requires halfmoon.js for the dropdowns -->
     <link rel="stylesheet" href="frameworkZ\halfmoon.css">
+    <script src="script.js"></script>
+
 </body>
+
 
 </html>
