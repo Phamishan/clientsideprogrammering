@@ -11,13 +11,11 @@
 <body style="background-image: linear-gradient(180deg, rgb(33, 91, 216), white)" ;>
     <!-- Page wrapper with .with-navbar class -->
     <div class="page-wrapper with-navbar">
-        <!-- Navbar (immediate child of the page wrapper) -->
         <nav class="navbar" style="background-color: #b717e3;">
             <a href="index.html" class="navbar-brand">
                 <img src="picZ/logo.png" alt="LOGO">
             </a>
             <ul class="navbar-nav d-none d-md-flex">
-                <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
                 <li class="nav-item active">
                     <a href="storkredsopslag.html" class="nav-link">Storkredsopslag</a>
                 </li>
@@ -27,32 +25,28 @@
             </ul>
         </nav>
         <div class="content-wrapper">
-            <div class="container-sm">
-                <div class="d-flex justify-content-center">
-                    <div class="position-absolute">
-                        <H2 class="content-title font-size-24 text-center">STORKREDSOPSLAG</H2>
-                        <div class="d-flex justify-content-center">
-                            <!-- Regular input -->
-                            <input type="text" class="form-control text-center w-200 w-sm-400 bg-light"
-                                placeholder="Indtast tal" id="userInput" required="required">
-                            </div>
-                                <button class="btn w-75 h-32 bg-transparent" type="button" onclick="searchForStorkredsopslag()">
-                                <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mt-20">
+                <div class="position-relative">
+                    <H2 class="content-title font-size-24 font-weight-bold text-center">STORKREDSOPSLAG</H2>
+                    <div class="d-flex justify-content-center">
+                        <!-- Regular input -->
+                        <input type="text" class="form-control text-center w-200 w-sm-400 bg-light"
+                            placeholder="Indtast tal" id="userInput" required="required">
+                        <button class="btn w-75 h-32 bg-success" type="button" onclick="searchForStorkredsopslag()">
+                            <div class="d-flex justify-content-center">
                                 <img src="picZ/searchIcon.png" alt="Search" class="w-25 h-25">
-                                </div>
-                            </button>
-                        <p id="resData" class="text-center"></p>
+                            </div>
+                        </button>
                     </div>
-                    <!-- position-absolute = position: absolute, bottom-0 = bottom: 0 -->
-                    <div class="position-absolute bottom-0">
-                        <img src="picZ/logo.png" alt="LOGO" class="w-100 w-sm-200 h-100;">
-                    </div>
+                    <p id="resData" class="content-title font-size-18 text-center mt-20"></p>
+                </div>
+                <div class="position-absolute bottom-0">
+                    <img src="picZ/logo.png" alt="LOGO" class="w-100 w-sm-200 h-100;">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Requires halfmoon.js for the dropdowns -->
     <link rel="stylesheet" href="frameworkZ\halfmoon.css">
     <script src="storkredsopslag.js"></script>
 </body>
