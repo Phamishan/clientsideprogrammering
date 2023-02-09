@@ -8,7 +8,7 @@
     <title>Storkredsopslag</title>
 </head>
 
-<body style="background-image: linear-gradient(180deg, rgb(33, 91, 216), white)" ;>
+<body style="background-image: linear-gradient(180deg, rgb(33, 91, 216), white)" onload="showMap(56.311517, 9.155959)">
     <!-- Page wrapper with .with-navbar class -->
     <div class="page-wrapper with-navbar">
         <nav class="navbar" style="background-color: #b717e3;">
@@ -32,13 +32,14 @@
                         <!-- Regular input -->
                         <input type="number" class="form-control text-center w-200 w-sm-400 bg-light"
                             placeholder="Indtast tal" id="userInput" required="required">
-                        <button class="btn w-75 h-32 bg-success" type="button" onclick="searchForStorkredsopslag()">
+                        <button class="btn w-75 h-32 bg-success" type="button" onclick="searchForStorkredsopslag()" id="button">
                             <div class="d-flex justify-content-center">
                                 <img src="picZ/searchIcon.png" alt="Search" class="w-25 h-25">
                             </div>
                         </button>
                     </div>
                     <p id="resData" class="content-title font-size-18 text-center mt-20"></p>
+                    <div id="map" class="h-250"></div>
                 </div>
                 <div class="position-absolute bottom-0">
                     <img src="picZ/logo.png" alt="LOGO" class="w-100 w-sm-200 h-100;">
@@ -49,6 +50,10 @@
 
     <link rel="stylesheet" href="frameworkZ\halfmoon.css">
     <script src="storkredsopslag.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </body>
 
 </html>
