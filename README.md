@@ -1,7 +1,7 @@
 # clientsideprogrammering
 
 ## case-beskrivelse
-Hjemmeside med menu og fedt responsive UI design, så det bliver lidt federe at slå postnumre op :)
+Vi har lavet en hjemmeside hvor man, på første side, kan putte et postnummer ind i et input felt, og så får man navnet på den by postnummeret tilhøre, sammen med de kommuner i postnummeret. Dette gør vi ved at fetch data'en fra en api. Den anden side vi har er noget lignende med samme api, men med storkredse i Danmark. Vi har også tilføjet et kort så man kan se hvor storkredsen er. Den sidste side vi havde tænkt os at lave var et kort hvor man kan klikke på Danmark og så se hvilket postnummer der er der hvor musen er.
 
 ## technology stack
 - Halfmoon `CSS`
